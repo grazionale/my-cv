@@ -3,63 +3,106 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
+        <title>Gabriel Grazionale</title>
         <link rel="icon" href="/favicon.ico" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
       </Head>
+      <main>
+        <section className={styles.glass}>
+          <div className={styles.dashboard}>
+            <div className={styles.user}>
+              <img src="avatar.jpeg" alt="Gabriel Grazionale" />
+              <h3>Gabriel Grazionale</h3>
+              <p>Software Engenieer</p>
+            </div>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+            <div className={styles.links}>
+              <ul>
+                <li className={styles.link}>
+                  <a href="https://www.linkedin.com/in/gabriel-grazionale-gomes-fernandes-08b331144/" target="_blank">
+                    <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/gabriel-grazionale-gomes-fernandes-08b331144/" target="_blank" 
+                    className={styles.socialText}>Linkedin
+                  </a>
+                </li>
+                <li className={styles.link}>
+                  <a href="https://github.com/grazionale" target="_blank"><i className="fa fa-github"
+                    aria-hidden="true"></i></a>
+                  <a href="https://github.com/grazionale" target="_blank" className={styles.socialText}>Github</a>
+                </li>
+                <li className={styles.link}>
+                  <a href="https://www.instagram.com/gabrielgrz/" target="_blank"><i className="fa fa-instagram"
+                    aria-hidden="true"></i></a>
+                  <a href="https://www.instagram.com/gabrielgrz/" target="_blank" className={styles.socialText}>Instagram</a>
+                </li>
+                <li className={styles.link}>
+                  <a href="mailto:gabrielgrazionale@hotmail.com.com"><i className="fa fa-envelope" aria-hidden="true"></i></a>
+                  <a href="mailto:gabrielgrazionale@hotmail.com.com" target="_blank" className={styles.socialText}>E-mail</a>
+                </li>
+              </ul>
+            </div>
 
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
+            <div className={styles.pro}>
+              <h2>Hello World!</h2>
+              <a href="#"><i className="fa fa-code" aria-hidden="true"></i></a>
+            </div>
+          </div>
 
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
+          <div className={styles.codes}>
+            <div className={styles.status}>
+              <h1>Software Engenieer</h1>
+              <input type="text" />
+            </div>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+            <ul className={styles.cards}>
+              <li className={styles.card}>
+                <img src="css-3.svg" alt="css" />
+                <div className={styles.cardInfo}>
+                  <h2>CSS Development</h2>
+                  <p>projects</p>
+                  <div className={`${styles.progress} ${styles.css}`}></div>
+                </div>
+                <h2 className={styles.percentage}>92%</h2>
+              </li>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+              <li className={styles.card}>
+                <img src="html-5.svg" alt="css" />
+                <div className={styles.cardInfo}>
+                  <h2>HTML Development</h2>
+                  <p>projects</p>
+                  <div className={`${styles.progress} ${styles.html}`}></div>
+                </div>
+                <h2 className={styles.percentage}>86%</h2>
+              </li>
 
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
+              <li className={styles.card}>
+                <img src="javascript.svg" alt="css" />
+                <div className={styles.cardInfo}>
+                  <h2>Javascript Dev</h2>
+                  <p>projects</p>
+                  <div className={`${styles.progress} ${styles.js}`}></div>
+                </div>
+                <h2 className={styles.percentage}>60%</h2>
+              </li>
+            </ul>
+            <div className={styles.footer}>
+              <a href="#" className={styles.previus}>
+                <i className="fa fa-terminal" aria-hidden="true"></i>
+                <h2>Skills</h2>
+              </a>
+              <a href="#" className={styles.next}>
+                <i className="fa fa-terminal" aria-hidden="true"></i>
+                <h2>Skills</h2>
+              </a>
+            </div>
+          </div>
+
+        </section>
       </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
     </div>
   )
 }
