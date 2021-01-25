@@ -1,0 +1,21 @@
+.cards {
+  width: 95%;
+}
+
+.card {
+  display: flex;
+  background: linear-gradient(
+    to left top,
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.3)
+  );
+  border-radius: 1rem;
+  box-shadow: 6px 6px 20px rgba(122, 122, 122, 0.2);
+  margin: 2rem 0;
+  padding: 2rem;
+  justify-content: space-between;
+}
+
+.card img {
+  height: 70px;
+}

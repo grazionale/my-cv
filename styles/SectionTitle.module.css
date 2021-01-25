@@ -1,0 +1,18 @@
+.status {
+  margin-bottom: 1rem;
+  width: 90%;
+  text-align: center;
+}
+
+.status input {
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+  border: none;
+  outline: none;
+  width: 50%;
+  padding: 0.01rem;
+  border-radius: 2rem;
+}

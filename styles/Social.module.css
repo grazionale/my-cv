@@ -1,0 +1,31 @@
+.link {
+  display: flex;
+  margin: 2rem 0;
+  padding: 8px 20px;
+  align-items: center;
+  cursor: pointer;
+  border: 1px solid rgba(232, 236, 241, 0.8);
+  border-radius: 2rem;
+}
+
+.link:hover {
+  background: #242424;
+}
+
+.link h2 {
+  padding: 2rem;
+}
+
+.link a {
+  font-size: 28px;
+  background: linear-gradient(to right, #00f7ff, #b3ff00 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+a.socialText {
+  margin-left: 18px;
+  font-size: 16px;
+  font-weight: 600;
+  -webkit-text-fill-color: #fff;
+}
