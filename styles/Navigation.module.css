@@ -1,0 +1,58 @@
+.next {
+  background: linear-gradient(to right top, #00f7ff, #b3ff00);
+  border-radius: 2rem;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.next i {
+  display: flex;
+  font-size: 28px;
+  color: #222;
+  cursor: default;
+}
+
+.next h2 {
+  color: #222;
+  font-weight: 400;
+  text-transform: uppercase;
+  pointer-events: none;
+  padding: 0 0.2rem;
+  display: flex;
+}
+
+.previus {
+  background: linear-gradient(to right top, #00f7ff, #b3ff00);
+  border-radius: 2rem;
+  color: #fff;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  border: none;
+}
+
+.previus i {
+  display: flex;
+  font-size: 28px;
+  color: #222;
+  cursor: default;
+}
+
+.previus h2 {
+  color: #222;
+  font-weight: 400;
+  text-transform: uppercase;
+  pointer-events: none;
+  padding: 0 0.2rem;
+  display: flex;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 2rem;
+}

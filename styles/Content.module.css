@@ -1,0 +1,11 @@
+.content {
+  flex: 2;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem;
+}
