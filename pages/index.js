@@ -1,14 +1,12 @@
-import styles from '../styles/Home.module.css'
-import Social from '../components/social'
+import StepWizard from 'react-step-wizard';
 import Seo from '../components/seo'
-import User from '../components/user'
-import TagPro from '../components/tagPro'
 import SectionTitle from '../components/sectionTitle'
 import SkillList from '../components/skillList'
 import Content from '../components/content'
 import SideBar from '../components/sidebar'
-import Navigation from '../components/navigation'
 import Glass from '../components/glass'
+import Step from '../components/step';
+import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
@@ -19,8 +17,14 @@ export default function Home() {
           <SideBar />
           <Content>
             <SectionTitle text="Software Engineer" />
-            <SkillList />
-            <Navigation />
+            <StepWizard initialStep={1} className={styles.stepWizard}>
+              <Step>
+                <SkillList />
+              </Step>
+              <Step>
+                <SkillList />
+              </Step>
+            </StepWizard>
           </Content>
         </Glass>
       </main>

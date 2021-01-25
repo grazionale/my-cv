@@ -1,0 +1,8 @@
+.step {
+  display: flex;
+  flex-direction: column;
+}
+
+.stepFooter {
+  padding-top: 6rem !important;
+}

@@ -1,18 +1,3 @@
-
-
-.glass {
-  background: #fff;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.4),
-    rgba(255, 255, 255, 0.1)
-  );
-  backdrop-filter: blur(0.7rem);
-  -webkit-backdrop-filter: blur(2rem);
-  border-radius: 2rem;
-  height: 70vh;
-  width: 60%;
-  z-index: 2;
-  display: flex;
+.stepWizard {
+  width: 100%;
 }
-

@@ -1,5 +1,6 @@
 .content {
   flex: 2;
+  overflow-x: hidden;
 }
 
 .content {
@@ -7,5 +8,5 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin: 2rem;
+  padding: 4rem;
 }

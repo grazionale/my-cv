@@ -1,3 +1,19 @@
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footerItems {
+  display: flex;
+  flex-direction: row;
+}
+
+.footerItems .previus {
+  margin-right: 1rem;
+  background-color: red;
+}
+
 .next {
   background: linear-gradient(to right top, #00f7ff, #b3ff00);
   border-radius: 2rem;
@@ -49,10 +65,4 @@
   pointer-events: none;
   padding: 0 0.2rem;
   display: flex;
-}
-
-.footer {
-  display: grid;
-  grid-template-columns: auto auto;
-  gap: 2rem;
 }
