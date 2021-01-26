@@ -1,12 +1,9 @@
 .content {
-  flex: 2;
-  overflow-x: hidden;
-}
-
-.content {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   padding: 4rem;
+  flex: 2;
+  overflow-x: hidden;
 }

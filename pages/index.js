@@ -5,7 +5,8 @@ import SkillList from '../components/skillList'
 import Content from '../components/content'
 import SideBar from '../components/sidebar'
 import Glass from '../components/glass'
-import Step from '../components/step';
+import Step from '../components/step'
+import Biography from '../components/biography'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
@@ -16,10 +17,10 @@ export default function Home() {
         <Glass>
           <SideBar />
           <Content>
-            <SectionTitle text="Software Engineer" />
+            {/* <SectionTitle text="Software Engineer" /> */}
             <StepWizard initialStep={1} className={styles.stepWizard}>
               <Step>
-                <SkillList />
+                <Biography />
               </Step>
               <Step>
                 <SkillList />

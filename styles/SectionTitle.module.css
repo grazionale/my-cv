@@ -1,7 +1,9 @@
 .status {
-  margin-bottom: 1rem;
-  width: 90%;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .status input {
@@ -13,6 +15,5 @@
   border: none;
   outline: none;
   width: 50%;
-  padding: 0.01rem;
   border-radius: 2rem;
 }
