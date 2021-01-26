@@ -16,7 +16,7 @@
 
 .next {
   background: linear-gradient(to right top, #00f7ff, #b3ff00);
-  border-radius: 2rem;
+  border-radius: 1rem;
   color: #fff;
   padding: 0.5rem 2rem;
   display: flex;
@@ -42,7 +42,7 @@
 
 .previus {
   background: linear-gradient(to right top, #00f7ff, #b3ff00);
-  border-radius: 2rem;
+  border-radius: 1rem;
   color: #fff;
   padding: 0.5rem 2rem;
   display: flex;

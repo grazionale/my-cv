@@ -1,0 +1,14 @@
+.tag {
+  
+}
+
+.tag p  {
+  font-size: 16px;
+  margin: 0.4rem;
+  padding: 0.2rem 1rem;
+  background: linear-gradient(to right, #00f7ff, #b3ff00 120%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 1px solid #00f7ff;
+  border-radius: 1rem;
+}

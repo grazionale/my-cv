@@ -58,3 +58,12 @@ main::after {
   background: linear-gradient(#00f7ff, #b3ff00);
   clip-path: circle(12% at 16% 20%);
 }
+
+::-webkit-scrollbar {
+  width: 0px;  
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FF0000;
+}
