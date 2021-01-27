@@ -4,12 +4,3 @@
   height: 100%;
   flex: 1;
 }
-
-.stepFooter {
-  position: fixed;
-  bottom: 0;
-  padding: 2rem 1rem;
-  right: 0;
-  width: 100%;
-  border-radius: 0rem 0 2rem 2rem;
-}

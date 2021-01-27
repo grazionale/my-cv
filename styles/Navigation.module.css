@@ -1,20 +1,20 @@
 
-.footer {
+.navigation {
   display: flex;
   justify-content: flex-end;
 }
 
-.footerItems {
+.navigationItems {
   display: flex;
   flex-direction: row;
 }
 
-.footerItems .previus {
+.navigationItems .previus {
   margin-right: 1rem;
   background-color: red;
 }
 
-.next {
+.btn {
   background: linear-gradient(to right top, #00f7ff, #b3ff00);
   border-radius: 1rem;
   color: #fff;
@@ -24,14 +24,18 @@
   align-items: flex-end;
 }
 
-.next i {
+.btn:first-child {
+  margin-right: 2rem;
+}
+
+.btn i {
   display: flex;
   font-size: 28px;
   color: #222;
   cursor: default;
 }
 
-.next h2 {
+.btn h2 {
   color: #222;
   font-weight: 400;
   text-transform: uppercase;
@@ -40,29 +44,3 @@
   display: flex;
 }
 
-.previus {
-  background: linear-gradient(to right top, #00f7ff, #b3ff00);
-  border-radius: 1rem;
-  color: #fff;
-  padding: 0.5rem 2rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  border: none;
-}
-
-.previus i {
-  display: flex;
-  font-size: 28px;
-  color: #222;
-  cursor: default;
-}
-
-.previus h2 {
-  color: #222;
-  font-weight: 400;
-  text-transform: uppercase;
-  pointer-events: none;
-  padding: 0 0.2rem;
-  display: flex;
-}
