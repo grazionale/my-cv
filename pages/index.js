@@ -1,6 +1,5 @@
 import StepWizard from 'react-step-wizard';
 import Seo from '../components/seo'
-import SectionTitle from '../components/sectionTitle'
 import SkillList from '../components/skillList'
 import Content from '../components/content'
 import SideBar from '../components/sidebar'

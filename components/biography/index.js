@@ -11,9 +11,11 @@ const Biography = () => {
         <p >
           Engenheiro de Software graduado pela Universidade Tecnológica Federal do Paraná.
         </p>
+        <br/>
         <p>
           Amante do desenvolvimento web, atualmente atuo como tech lead desenvolvedor full stack, participando da concepção e construção de novos produtos de software, buscando unir tecnologia com entrega de valor.
         </p>
+        <br/>
         <p>
           Em minha trajetória, tive a oportunidade de trabalhar com diversas tecnologias, empresas e clientes. Construindo softwares para setores como varejo, fabril, transporte, financeiro e solar.
         </p>

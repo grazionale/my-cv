@@ -34,12 +34,4 @@
   cursor: default;
 }
 
-.btn h2 {
-  color: #222;
-  font-weight: 400;
-  text-transform: uppercase;
-  pointer-events: none;
-  padding: 0 0.2rem;
-  display: flex;
-}
 
