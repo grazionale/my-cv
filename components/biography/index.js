@@ -1,12 +1,11 @@
 import styles from '../../styles/Biography.module.css'
-import Content from '../content';
 import SectionTitle from '../sectionTitle';
 import TagCloud from '../tagCloud';
 
 const Biography = () => {
 
   return (
-    <Content>
+    <>
       <SectionTitle text="Software Engineer" />
       <div className={styles.biography}>
         <p >
@@ -20,7 +19,7 @@ const Biography = () => {
         </p>
       </div>
       <TagCloud />
-    </Content>
+    </>
   )
 }
 

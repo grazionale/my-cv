@@ -65,5 +65,5 @@ main::after {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FF0000;
+  display: none !important;
 }

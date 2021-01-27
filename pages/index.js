@@ -8,6 +8,7 @@ import Glass from '../components/glass'
 import Step from '../components/step'
 import Biography from '../components/biography'
 import styles from '../styles/Home.module.css'
+import Navigation from '../components/navigation';
 
 export default function Home() {
   return (
@@ -17,10 +18,12 @@ export default function Home() {
         <Glass>
           <SideBar />
           <Content>
-            {/* <SectionTitle text="Software Engineer" /> */}
-            <StepWizard initialStep={1} className={styles.stepWizard}>
+            <StepWizard initialStep={1} className={styles.stepWizard} nav={<Navigation/>}>
               <Step>
                 <Biography />
+              </Step>
+              <Step>
+                <SkillList />
               </Step>
               <Step>
                 <SkillList />

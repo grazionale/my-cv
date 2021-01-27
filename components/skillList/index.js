@@ -5,7 +5,7 @@ import SkillCard from '../skillCard'
 
 const SkillList = () => {
   return (
-    <Content>
+    <>
       <SectionTitle text="Software Engineer" />
       <ul className={styles.cards}>
         <li className={styles.card}>
@@ -23,8 +23,17 @@ const SkillList = () => {
             img="javascript.svg" imgAlt="javascript" percentage="60" />
         </li>
 
+        <li className={styles.card}>
+          <SkillCard title="Javascript Dev" subtitle="projects"
+            img="javascript.svg" imgAlt="javascript" percentage="60" />
+        </li>
+        
+        <li className={styles.card}>
+          <SkillCard title="Javascript Dev" subtitle="projects"
+            img="javascript.svg" imgAlt="javascript" percentage="60" />
+        </li>
       </ul>
-    </Content>
+    </>
   )
 }
 
