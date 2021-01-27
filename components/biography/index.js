@@ -1,4 +1,4 @@
-import styles from '../../styles/Biography.module.css'
+import styles from './Biography.module.css'
 import SectionTitle from '../sectionTitle';
 import TagCloud from '../tagCloud';
 

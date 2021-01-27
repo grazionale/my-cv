@@ -1,4 +1,4 @@
-import styles from '../../styles/tagPro.module.css'
+import styles from './tagPro.module.css'
 
 const TagPro = ({text}) => {
   return (

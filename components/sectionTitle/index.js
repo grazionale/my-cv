@@ -1,4 +1,4 @@
-import styles from '../../styles/SectionTitle.module.css'
+import styles from './SectionTitle.module.css'
 
 const SectionTitle = ({ text }) => {
   return (

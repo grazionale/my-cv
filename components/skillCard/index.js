@@ -1,4 +1,4 @@
-import styles from '../../styles/SkillCard.module.css'
+import styles from './SkillCard.module.css'
 
 const SkillCard = ({ title, subtitle, img, imgAlt, percentage }) => {
   return (

@@ -1,4 +1,4 @@
-import styles from '../../styles/SkillList.module.css'
+import styles from './SkillList.module.css'
 import Content from '../content'
 import SectionTitle from '../sectionTitle'
 import SkillCard from '../skillCard'

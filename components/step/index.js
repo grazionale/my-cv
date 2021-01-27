@@ -1,5 +1,5 @@
 import Navigation from "../navigation";
-import styles from "../../styles/Step.module.css";
+import styles from "./Step.module.css";
 
 const Step = ({children, nextStep, previousStep}) => {
   return (

@@ -1,4 +1,4 @@
-import styles from "../../styles/SkillTag.module.css";
+import styles from "./SkillTag.module.css";
 
 const SkillTag = ({text}) => {
   return (

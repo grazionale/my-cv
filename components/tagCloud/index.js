@@ -1,4 +1,4 @@
-import styles from "../../styles/TagCloud.module.css";
+import styles from "./TagCloud.module.css";
 import SkillTag from "../SkillTag";
 
 const TagCloud = () => {

@@ -1,4 +1,4 @@
-import styles from '../../styles/Glass.module.css'
+import styles from './Glass.module.css'
 
 const Glass = ({ children }) => {
   return (

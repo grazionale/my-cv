@@ -1,4 +1,4 @@
-import styles from '../../styles/SideBar.module.css'
+import styles from './SideBar.module.css'
 import Social from '../social';
 import TagPro from '../tagPro';
 import User from '../user';

@@ -1,4 +1,4 @@
-import styles from '../../styles/Social.module.css'
+import styles from './Social.module.css'
 
 const Social = ({ link, icon, text }) => {
 
