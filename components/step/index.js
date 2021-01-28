@@ -1,4 +1,3 @@
-import Navigation from "../navigation";
 import styles from "./Step.module.css";
 
 const Step = ({children, nextStep, previousStep}) => {

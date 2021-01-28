@@ -1,5 +1,5 @@
 import styles from "./TagCloud.module.css";
-import SkillTag from "../SkillTag";
+import SkillTag from "../skillTag";
 
 const TagCloud = ({ data = [] }) => {
   return (
