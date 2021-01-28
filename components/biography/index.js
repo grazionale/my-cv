@@ -1,7 +1,7 @@
 import styles from './Biography.module.css'
 import SectionTitle from '../sectionTitle';
 import TagCloud from '../tagCloud';
-import Paragraph from '../shared/Paragraph';
+import Paragraph from '../shared/paragraph';
 
 const Biography = () => {
   const skills = [
