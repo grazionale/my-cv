@@ -6,7 +6,7 @@ import SkillCard from '../skillCard'
 const SkillList = () => {
   return (
     <>
-      <SectionTitle text="Software Engineer" />
+      <SectionTitle text="Principais Skills" />
       <ul className={styles.cards}>
         <li className={styles.card}>
           <SkillCard title="CSS Development" subtitle="projects"
