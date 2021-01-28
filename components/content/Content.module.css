@@ -11,3 +11,9 @@
     overflow-y: hidden;
   }
 }
+
+@media(max-width: 384px) {
+  .content {
+    padding: 1.5rem;
+  }
+}
