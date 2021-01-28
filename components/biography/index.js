@@ -1,26 +1,64 @@
 import styles from './Biography.module.css'
 import SectionTitle from '../sectionTitle';
 import TagCloud from '../tagCloud';
+import Paragraph from '../shared/Paragraph';
 
 const Biography = () => {
-
+  const skills = [
+    'Java (Spring Boot)',
+    '.Net Core',
+    '.Net Framework',
+    'NodeJs',
+    'NestJs',
+    'Ruby on Rails',
+    'HTML5',
+    'CSS3',
+    'JavaScript',
+    'TypeScript',
+    'AngularJs',
+    'Angular 7',
+    'ReactJs',
+    'NextJs',
+    'Bootstrap',
+    'Tailwind',
+    'Ionic',
+    'React Native',
+    'MongoDb',
+    'MySQL',
+    'Oracle PL/SQL',
+    'SQL Server',
+    'Postgres',
+    'Docker',
+    'CI/CD',
+    'Jest',
+    'Git',
+    'RabbitMQ',
+    'Redis',
+    'AWS',
+    'Application Insights',
+    'Jira',
+    'Monday',
+    'Scrum',
+    'Wordpress',
+    'Magento'];
+  
   return (
     <>
-      <SectionTitle text="Software Engineer" />
+      <SectionTitle text="Quem sou eu?" />
       <div className={styles.biography}>
-        <p >
+        <Paragraph>
           Engenheiro de Software graduado pela Universidade Tecnológica Federal do Paraná.
-        </p>
-        <br/>
-        <p>
+        </Paragraph>
+        <br />
+        <Paragraph>
           Amante do desenvolvimento web, atualmente atuo como tech lead desenvolvedor full stack, participando da concepção e construção de novos produtos de software, buscando unir tecnologia com entrega de valor.
-        </p>
-        <br/>
-        <p>
-          Em minha trajetória, tive a oportunidade de trabalhar com diversas tecnologias, empresas e clientes. Construindo softwares para setores como varejo, fabril, transporte, financeiro e solar.
-        </p>
+        </Paragraph>
+        <br />
+        <Paragraph>
+          Em minha trajetória, tive a oportunidade de trabalhar com diversas tecnologias, empresas e clientes. Construindo softwares para setores como varejo, fabril, transporte, financeiro e agora para o setor solar.
+        </Paragraph>
       </div>
-      <TagCloud />
+      <TagCloud data={skills} />
     </>
   )
 }
