@@ -8,8 +8,35 @@
   backdrop-filter: blur(0.7rem);
   -webkit-backdrop-filter: blur(2rem);
   border-radius: 2rem;
-  height: 70vh;
+  height: 80vh;
   width: 60%;
   z-index: 2;
   display: flex;
+}
+
+@media(max-width: 992px) {
+  .glass {
+    flex-direction: column;
+    height: auto;
+    margin: 4rem 0;
+    width: 65%;
+  }
+}
+
+@media(max-width: 768px) {
+  .glass {
+    width: 70%;
+  }
+}
+
+@media(max-width: 576px) {
+  .glass {
+    width: 80%;
+  }
+}
+
+@media(max-width: 384px) {
+  .glass {
+    width: 90%;
+  }
 }

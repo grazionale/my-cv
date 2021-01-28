@@ -8,7 +8,7 @@ const SideBar = ({ link, icon, text }) => {
   return (
     <div className={styles.dashboard}>
       <User />
-      <div>
+      <div className={styles.socialLinks}>
         <Social link="https://www.linkedin.com/in/gabriel-grazionale-gomes-fernandes-08b331144/"
           icon="fa fa-linkedin-square" text="Linkedin" />
         <Social link="https://github.com/grazionale" icon="fa fa-github"
