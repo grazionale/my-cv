@@ -14,13 +14,14 @@
 }
 
 .btn {
-  background: linear-gradient(to right top, #00f7ff, #b3ff00);
+  border: 1px solid #00f7ff;
   border-radius: 1rem;
   color: #fff;
   padding: 0.5rem 2rem;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+  cursor: pointer;
 }
 
 .btn:first-child {
@@ -28,10 +29,22 @@
 }
 
 .btn i {
+  cursor: pointer;
   display: flex;
   font-size: 28px;
-  color: #222;
-  cursor: default;
+  background: linear-gradient(to right, #00f7ff, #b3ff00 120%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+.btn:hover i { 
+  background: linear-gradient(to right, #000000, #000000 120%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
+.btn:hover {
+  background: linear-gradient(to right top, #00f7ff, #b3ff00);
+}
