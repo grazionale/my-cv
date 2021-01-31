@@ -40,5 +40,5 @@ jobs:
     - name: Publish AWS
       run: |
         echo 'Starting to Deploy...' 
-        ssh ubuntu@54.232.44.37 
+        ssh -tt ubuntu@54.232.44.37 
         ls
