@@ -38,4 +38,4 @@ jobs:
         aws-region: sa-east-1
     
     - name: Publish AWS
-      - run: echo 'Starting to Deploy...'
+      run: echo 'Starting to Deploy...'
