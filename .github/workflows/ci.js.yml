@@ -38,6 +38,4 @@ jobs:
         aws-region: sa-east-1
     
     - name: Publish AWS
-    - run: echo 'Starting to Deploy...'
-    - run: ssh ubuntu@54.232.44.37
-    - run: ls
+      - run: echo 'Starting to Deploy...' && ssh ubuntu@54.232.44.37 && ls
