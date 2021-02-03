@@ -49,7 +49,3 @@ jobs:
         comment: Blue/Green Deployment executed by Github Actions
         working-directory: /home/ubuntu/api_production
         command: ls -al
-
-    # Catch SSM outputs
-    - name: Get the outputs
-      run: echo "The Command id is ${{ steps.ssm.outputs.command-id }}"
