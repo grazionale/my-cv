@@ -31,14 +31,6 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    # - name: Run Docker container in EC2
-    #   uses: appleboy/ssh-action@master
-    #   with:
-    #     host: ${{ secrets.HOST }}
-    #     username: ${{ secrets.USERNAME }}
-    #     password: ${{ secrets.PASSWORD }}        
-    #     script: echo ${{ secrets.GITHUB_TOKEN }} | sudo docker ps || true
-
     - name: AWS SSM Send-Command
       uses: peterkimzz/aws-ssm-send-command@master
       id: ssm
