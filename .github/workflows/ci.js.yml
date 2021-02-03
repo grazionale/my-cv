@@ -37,4 +37,4 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}        
-        script: echo ${{ secrets.GITHUB_TOKEN }} | sudo docker run --name grazionale-cv -d -p 3000:3000 eletrico123/grazionale-cv:master-b3848d1
+        script: echo ${{ secrets.GITHUB_TOKEN }} | sudo docker ps || true
