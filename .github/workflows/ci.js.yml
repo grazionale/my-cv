@@ -18,18 +18,18 @@ jobs:
       with:
         node-version: 14
 
-    # - run: npm install -g yarn
-    # - run: yarn install --frozen-lockfile
-    # - run: yarn build
+    - run: npm install -g yarn
+    - run: yarn install --frozen-lockfile
+    - run: yarn build
 
-    # - name: Build and Push Docker Image
-    #   uses: mr-smithers-excellent/docker-build-push@v5
-    #   with:
-    #     image: eletrico123/grazionale-cv
-    #     tags: v1, latest
-    #     registry: docker.io
-    #     username: ${{ secrets.DOCKER_USERNAME }}
-    #     password: ${{ secrets.DOCKER_PASSWORD }}
+    - name: Build and Push Docker Image
+      uses: mr-smithers-excellent/docker-build-push@v5
+      with:
+        image: eletrico123/grazionale-cv
+        tags: v1, latest
+        registry: docker.io
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
 
     # - name: Run Docker container in EC2
     #   uses: appleboy/ssh-action@master
@@ -39,13 +39,18 @@ jobs:
     #     password: ${{ secrets.PASSWORD }}        
     #     script: echo ${{ secrets.GITHUB_TOKEN }} | sudo docker ps || true
 
-    - name: AWS SSM Send Command
-      uses: peterkimzz/aws-ssm-send-command@1.0.4
+    - name: AWS SSM Send-Command
+      uses: peterkimzz/aws-ssm-send-command@master
+      id: ssm
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: us-east-1
+        aws-region: ${{ secrets.AWS_REGION }}
         instance-ids: ${{ secrets.INSTANCE_ID }}
-        comment: Blue/Green Deployment executed by Github Actions
         working-directory: /home/ubuntu/application
         command: ls -al
+        comment: Hello world!
+
+    # Catch SSM outputs
+    - name: Get the outputs
+      run: echo "The Command id is ${{ steps.ssm.outputs.command-id }}"
