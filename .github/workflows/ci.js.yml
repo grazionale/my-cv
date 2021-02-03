@@ -26,6 +26,7 @@ jobs:
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
         image: eletrico123/grazionale-cv
+        tags: v1, latest
         registry: docker.io
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
@@ -35,6 +36,5 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        script: echo ${{ secrets.GITHUB_TOKEN }}
-              
+        password: ${{ secrets.PASSWORD }}        
+        script: echo ${{ secrets.GITHUB_TOKEN }} | sudo docker run --name grazionale-cv -d -p 3000:3000 eletrico123/grazionale-cv:master-b3848d1
