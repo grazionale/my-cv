@@ -40,15 +40,15 @@ jobs:
     #     script: echo ${{ secrets.GITHUB_TOKEN }} | sudo docker ps || true
 
     - name: AWS SSM Send-Command
-        uses: peterkimzz/aws-ssm-send-command@master
-        id: ssm
-        with:
-          aws-region: ${{ secrets.AWS_REGION }}
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          instance-ids: ${{ secrets.INSTANCE_ID }}
+      uses: peterkimzz/aws-ssm-send-command@master
+      id: ssm
+      with:
+        aws-region: ${{ secrets.AWS_REGION }}
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        instance-ids: ${{ secrets.INSTANCE_ID }}
 
-          working-directory: /home/ubuntu/application
-          command: ls -al
-          comment: Hello world!
-          comment: sudo docker ps
+        working-directory: /home/ubuntu/application
+        command: ls -al
+        comment: Hello world!
+        comment: sudo docker ps
