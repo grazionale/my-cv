@@ -40,14 +40,17 @@ jobs:
     #     script: echo ${{ secrets.GITHUB_TOKEN }} | sudo docker ps || true
 
     - name: AWS SSM Send-Command
-      uses: peterkimzz/aws-ssm-send-command@master
+      uses: peterkimzz/aws-ssm-send-command@1.0.1
       id: ssm
       with:
-        aws-region: ${{ secrets.AWS_REGION }}
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ap-west-1
         instance-ids: ${{ secrets.INSTANCE_ID }}
-
         working-directory: /home/ubuntu/application
         command: ls -al
         comment: Hello world!
+
+    # Catch SSM outputs
+    - name: Get the outputs
+      run: echo "The Command id is ${{ steps.ssm.outputs.command-id }}"
