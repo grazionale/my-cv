@@ -50,5 +50,5 @@ jobs:
 
         working-directory: /home/ubuntu/application
         command: ls -al
+        command: sudo docker ps
         comment: Hello world!
-        comment: sudo docker ps
