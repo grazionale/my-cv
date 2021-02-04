@@ -40,5 +40,5 @@ jobs:
         aws-region: ${{ secrets.AWS_REGION }}
         instance-ids: ${{ secrets.INSTANCE_ID }}
         working-directory: /home/ubuntu
-        command: sudo docker run --name grazionale-cv -d -p 80:3000 eletrico123/grazionale-cv:master-b3848d1
+        command: sudo docker stop $(sudo docker ps -aq)
 
