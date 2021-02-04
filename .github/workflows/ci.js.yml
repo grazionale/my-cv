@@ -39,11 +39,7 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ secrets.AWS_REGION }}
         instance-ids: ${{ secrets.INSTANCE_ID }}
-        working-directory: /home/ubuntu/application
-        command: echo ${{ secrets.GITHUB_TOKEN }} | sudo docker stop $(sudo docker ps -aq)
-        comment: Hello world!
+        working-directory: /home/ubuntu
+        command: sudo docker container stop 8406181b5013
 
-    # Catch SSM outputs
-    - name: Get the outputs
-      run: echo "The Command id is ${{ steps.ssm.outputs.command-id }}"
  
